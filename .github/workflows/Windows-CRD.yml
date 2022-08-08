@@ -22,7 +22,6 @@ jobs:
       run: ./setup.ps1
     - name: Запуск Windows
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
-    - name: Можно подключаться!
   
     
 
