@@ -22,6 +22,8 @@ jobs:
       run: ./setup.ps1
     - name: Запуск Windows
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
+    - name: Вечный онлайн ПК
+      run: ./timeout.ps1
   
     
 
