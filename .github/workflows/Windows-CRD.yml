@@ -18,13 +18,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Initializing Setup
+    - name: Установска Windows
       run: ./setup.ps1
-    - name: Starting CRD 
+    - name: Запуск Windows
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
-    - name: Keep Alive
-      run: ./timeout.ps1
-
+    - name: Можно подключаться!
   
     
 
