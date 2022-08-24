@@ -5,7 +5,7 @@ unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 rm ngrok-stable-linux-amd64.zip
 chmod 755 ngrok
 sudo mv ngrok /usr/bin/
-read -p "Вставьте ваш Token из Ngrok: " CRP
+read -p "Ngrok token: " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 5900 &>/dev/null &
 echo Идёт процесс взлома Genesis Cloud...
