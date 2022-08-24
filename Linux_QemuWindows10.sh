@@ -1,9 +1,3 @@
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-sudo apt install unzip
-unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-rm ngrok-stable-linux-amd64.zip
-chmod 755 ngrok
-sudo mv ngrok /usr/bin/
 read -p "Ngrok token: " CRP
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 5900 &>/dev/null &
